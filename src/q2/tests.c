@@ -16,10 +16,23 @@ void runTests(){
   traverse(l);
   printf("\n");
 
-  // Test delete after
-  deleteAfter(l);
+length(l);
+ 
+  push(&l, "push test", 30);
   traverse(l);
   printf("\n");
 
+  pop(&l);
+  traverse(l);
+  printf("\n");
+  
+  enqueue(&l, "enqueue test", 30);
+  traverse(l);
+  printf("\n");
+
+  dequeue(l);
+  traverse(l);
+  printf("\n");
+  
   printf("\nTests complete.\n");
 }
